@@ -52,7 +52,7 @@ public class AuthController {
             return ResponseEntity.ok(response);
         } catch (Exception e) {
 
-            logger.error("Login failed: {}", e.getMessage());
+            logger.error("Login failed cc: {}", e.getMessage());
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);
         }
     }
